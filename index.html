@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viweport" content="initial-scale=1" />
+    <title>MozaiQr</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <h1>MozaiQr</h1>
+    <input type="text" id="text" placeholder="https://example.com" />
+    <label id="fileButton">
+      Choisir un fichier ou le glisser ici
+      <input type="file" id="image" accept="image/png, image/jpeg" />
+    </label>
+    <select id="correct-level">
+      <option value="L">L</option>
+      <option value="M" selected>M</option>
+      <option value="Q">Q</option>
+      <option value="H">H</option>
+    </select>
+    <input type="button" id="submit" value="Générer" />
+    <div id="output"></div>
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>
